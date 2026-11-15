@@ -19,3 +19,13 @@ Web-Nachbau des Windows-Programms `Semantiktest.exe` (WBW, Version 2.0) zur Sema
 
 Import von `.ist`-Dateien des Originalprogramms, CSV-Exporten (24 Werte je Zeile + Bereich/Position/Beschäftigung) oder 24-stelligen Ziffernfolgen. Export als `.ist` oder CSV mit Koordinaten.
 Profile werden nur lokal im Browser gespeichert.
+
+## Semantiktest Live (Pilot)
+
+`live.html` – Online-Befragung mit gemeinsamer Datenbank (claude.ai Artifact):
+
+- Leitung (Editor/Owner): Befragungen anlegen, öffnen/schließen, Link und QR-Code, Live-Diagramm,
+  Filter mit Mindestgruppengröße, Vorher/Nachher-Vergleich, Import alter .ist/.csv-Daten, Export, Ergebnis für Teilnehmer freigeben.
+- Teilnehmer (Contributor): Fragebogen am Handy ausfüllen, eigene Einordnung sehen, Antwort ändern solange offen.
+- Zugriffsregeln: `surveys` lesen alle / schreiben Leitung; `responses` je Person nur die eigene Antwort,
+  alle Antworten sieht nur die Leitung; `imports` nur Leitung.
